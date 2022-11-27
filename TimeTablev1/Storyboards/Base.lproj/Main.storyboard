@@ -81,17 +81,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="20.333333969116211"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFO-hq-rqx">
-                                                    <rect key="frame" x="20" y="10" width="374" height="0.33333333333333393"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFO-hq-rqx">
+                                                    <rect key="frame" x="40" y="10" width="334" height="0.33333333333333393"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="fFO-hq-rqx" firstAttribute="leading" secondItem="eeq-M0-PPL" secondAttribute="leading" constant="20" id="AIa-dO-d6l"/>
+                                                <constraint firstItem="fFO-hq-rqx" firstAttribute="leading" secondItem="eeq-M0-PPL" secondAttribute="leading" constant="40" id="AIa-dO-d6l"/>
                                                 <constraint firstItem="fFO-hq-rqx" firstAttribute="top" secondItem="eeq-M0-PPL" secondAttribute="top" constant="10" id="ifm-dC-TN0"/>
-                                                <constraint firstAttribute="trailing" secondItem="fFO-hq-rqx" secondAttribute="trailing" constant="20" id="rGL-UO-tIo"/>
+                                                <constraint firstAttribute="trailing" secondItem="fFO-hq-rqx" secondAttribute="trailing" constant="40" id="rGL-UO-tIo"/>
                                                 <constraint firstAttribute="bottom" secondItem="fFO-hq-rqx" secondAttribute="bottom" constant="10" id="uL1-HW-TKR"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -123,7 +123,7 @@
                     <navigationItem key="navigationItem" title="Расписание уроков" id="eVx-4V-kjh">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="UBl-5E-r3G">
                             <connections>
-                                <segue destination="FUb-0a-luF" kind="presentation" identifier="newLesson" modalPresentationStyle="fullScreen" id="zFf-Au-nNU"/>
+                                <segue destination="FUb-0a-luF" kind="presentation" identifier="newLesson" modalPresentationStyle="fullScreen" id="Hmk-jE-Crt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -233,7 +233,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fy4-Vv-ZNz"/>
+        <segue reference="Hmk-jE-Crt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="info" catalog="system" width="93" height="128"/>

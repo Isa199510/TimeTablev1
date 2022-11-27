@@ -38,6 +38,8 @@ extension WeekLessonsViewController {
         guard let tableRowSelected = tableView.indexPathForSelectedRow else { return }
         newLessonVC.nameLessonForEdit = weeks[weekSegmenteds.selectedSegmentIndex][tableRowSelected.row]
         newLessonVC.indexForNameLessonEdit = tableView.indexPathForSelectedRow?.row
+  
+        newLessonVC.forTitleLessonLabel = segue.identifier == "editLesson" ? "Изменить предмет" : nil
     }
 }
 
@@ -79,7 +81,6 @@ extension WeekLessonsViewController: UITableViewDataSource, UITableViewDelegate 
 }
 
 extension WeekLessonsViewController: NewLessonViewControllerDelegate {
-    
     func setLesson(_ lesson: Lesson, index: Int?) {
         if let index = index {
             weeks[weekSegmenteds.selectedSegmentIndex][index] = lesson

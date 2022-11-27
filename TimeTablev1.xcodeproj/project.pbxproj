@@ -64,8 +64,9 @@
 		F4A099F5292E515B00AB1632 /* TimeTablev1 */ = {
 			isa = PBXGroup;
 			children = (
-				F4E7AF8F292E6B27001D14F8 /* Models */,
 				F4A09A0C292E519900AB1632 /* SupportFiles */,
+				F4E7AF8F292E6B27001D14F8 /* Models */,
+				F4E8B8EC2933B79D001CEAE8 /* ViewCell */,
 				F4A09A0B292E518B00AB1632 /* ViewControllers */,
 				F4A09A0A292E518100AB1632 /* Storyboards */,
 				F4A099FF292E516000AB1632 /* Assets.xcassets */,
@@ -89,7 +90,6 @@
 				F4A09A0D292E5C5E00AB1632 /* TabBarController.swift */,
 				F4E7AF92292E74B0001D14F8 /* WeekLessonsViewController.swift */,
 				F424DA0D292EA60800D6AC7C /* NewLessonViewController.swift */,
-				F424DA0F292EACD300D6AC7C /* LessonViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -109,6 +109,14 @@
 				F4E7AF90292E6B3C001D14F8 /* Timetable.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F4E8B8EC2933B79D001CEAE8 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F424DA0F292EACD300D6AC7C /* LessonViewCell.swift */,
+			);
+			path = ViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

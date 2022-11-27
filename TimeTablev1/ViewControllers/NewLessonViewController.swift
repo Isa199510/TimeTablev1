@@ -17,14 +17,12 @@ class NewLessonViewController: UIViewController {
     var delegate: NewLessonViewControllerDelegate!
     var nameLessonForEdit: Lesson?
     var indexForNameLessonEdit: Int?
+    
+    var forTitleLessonLabel: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLessonTextField.text = nameLessonForEdit?.name
-    }
-    
-    func configure(nameLesson: String) {
-        nameLessonTextField.text = nameLesson
+        updateNewLessonVC()
     }
 
     @IBAction func cancelPressedButton() {
@@ -38,5 +36,24 @@ class NewLessonViewController: UIViewController {
             index: indexForNameLessonEdit
         )
         dismiss(animated: true)
+    }
+    
+    @objc private func nameLessonTextFieldDidChanged() {
+        guard let nameLesson = nameLessonTextField.text else { return }
+        saveButtonOutlet.isEnabled = !nameLesson.isEmpty
+    }
+    
+    private func updateNewLessonVC() {
+        saveButtonOutlet.isEnabled = false
+        nameLessonTextField.addTarget(
+            self,
+            action: #selector(nameLessonTextFieldDidChanged),
+            for: .editingChanged
+        )
+        nameLessonTextField.text = nameLessonForEdit?.name
+        nameLessonTextField.becomeFirstResponder()
+        if let forTitleLessonLabel = forTitleLessonLabel {
+            titleLessonLabel.text = forTitleLessonLabel
+        }
     }
 }
